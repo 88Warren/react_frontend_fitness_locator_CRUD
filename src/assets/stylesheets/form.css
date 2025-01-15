@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-container {
+    @apply w-full p-px rounded-3xl bg-gradient-to-r from-vibrantBlue to-energeticGreen sm:max-w-md shadow-lg; 
+  }
+  
+  .form-layout {
+    @apply bg-white p-6 space-y-6 rounded-3xl; 
+  }
+  
+  .form-title {
+    @apply text-2xl font-bold font-oswald leading-tight tracking-tight text-darkGray text-center; 
+  }
+  
+  .form-label {
+    @apply block mb-2 font-poppins text-sm font-medium text-darkGray;
+  }
+  
+  .form-input {
+    @apply bg-white border border-darkGray font-poppins text-darkGray rounded-lg block w-full p-2.5 focus:border-vibrantBlue focus:ring focus:ring-vibrantBlue focus:outline-none; 
+  }
+}
